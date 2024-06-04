@@ -1,0 +1,24 @@
+openapi: 3.0.0  # OpenAPI version
+
+info:
+  title: My Next.js API
+  description: A simple API example
+  version: 1.0.0  # Your API version
+
+paths:
+  /api/get-users:
+    get:
+      summary: Get a message  # Short description of the GET operation
+      description: Returns a message for the GET request
+      responses:
+        '200':  # Response code for successful request
+          description: Successful response
+          content:
+            application/json:  # Content type for the response
+              schema:
+                type: object  # Data is an object
+                properties:
+                  message:
+                    type: string  # Property name and type
+                    description: The message returned by the API
+
