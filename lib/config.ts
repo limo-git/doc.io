@@ -1,6 +1,6 @@
 const CONFIG = {
     jsDocs: {
-      apis: ['**/api/**/route.ts'],
+      apis: ['./src/app/api/routes/route.ts'],
       swaggerDefinition: {
         info: {
           title: 'Some Service',

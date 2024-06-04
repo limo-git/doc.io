@@ -2,12 +2,12 @@ import { NextRequest,NextResponse } from "next/server";
 
 /**
  * @swagger
- * /api:
- *   get:
+ * /route:
+ *  get:
  *    description: Returns hello world
- *     responses:
- *      200:
- *        "description": Hello World!
+ *    responses:
+ *      '200' :
+ *        description: Hello World!
  */
 
 export async function GET(req:NextRequest) {
@@ -24,12 +24,12 @@ export async function GET(req:NextRequest) {
 
 /**
  * @swagger
- * /api:
- *   post:
- *     description: Returns hello world
- *     responses:
- *       200:
- *         "description": Hello World!
+ * /route:
+ *  post:
+ *    description: Returns hello world
+ *    responses:
+ *      '200':
+ *        description: Hello World!
  */ 
 
 export async function POST(req:NextRequest) {
