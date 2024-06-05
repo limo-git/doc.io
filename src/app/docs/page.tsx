@@ -11,6 +11,7 @@ const getData = async () => {
 
 const Docs = async () => {
   const data = await getData();
+  console.log(data)
 
   return <SwaggerDoc spec={data} />;
 };
