@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "ts-node --loader ts-node/esm ./src/deploy.ts",
     "build": "tsup"
   },
   "dependencies": {
     "@ts-rest/core": "^3.45.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "inquirer": "^9.2.23",
     "next": "14.2.3",
     "next-swagger-doc": "^0.4.0",
     "react": "^18",
@@ -17,14 +21,17 @@
     "rehype-stringify": "^10.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
+    "simple-git": "^3.25.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-dist": "^5.17.14",
     "swagger-ui-react": "^5.17.14",
     "tsup": "^8.1.0",
     "unified": "^11.0.5",
+    "vercel": "^34.2.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.7",
     "@types/node": "^20.14.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18",
