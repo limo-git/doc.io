@@ -1,12 +1,10 @@
 {
-  "name": "minty",
-  "version": "0.1.0",
+  "name": "doc.io",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "tsup"
   },
   "dependencies": {
     "@ts-rest/core": "^3.45.2",
@@ -22,6 +20,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-dist": "^5.17.14",
     "swagger-ui-react": "^5.17.14",
+    "tsup": "^8.1.0",
     "unified": "^11.0.5",
     "zod": "^3.23.8"
   },
@@ -35,5 +34,14 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.5"
-  }
+  },
+  "description": "This is a documentation-inator",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "docs"
+  ],
+  "author": "limo-git",
+  "license": "MIT"
 }
